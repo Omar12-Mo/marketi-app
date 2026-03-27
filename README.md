@@ -1,8 +1,8 @@
-# Marketi E-Commerce App — Feature Specification
+# Marketi E-Commerce App 🛍️
 
 **Version:** 1.0  
 **Date:** March 2026  
-**Type:** High-Level Feature Spec  
+**Type:** shopping app 
 
 ---
 
