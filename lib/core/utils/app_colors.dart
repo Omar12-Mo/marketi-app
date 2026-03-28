@@ -5,8 +5,8 @@ class AppColors {
   //navy
   static const Color navy = Color(0xff51526C);
 
-//white
-  static const Color white = Color(0xffFFFFFF);
+//primary color
+  static const Color primaryColor = Color(0xffFFFFFF);
   
   //gray
   static const Color grayScale = Color(0xff7993C5);
@@ -14,10 +14,10 @@ class AppColors {
   static const Color gray2 = Color(0xff929BAB);
 
   //blue
-  static const Color blue1 = Color(0xff3F80FF);
+  static const Color secondryColor = Color(0xff3F80FF);
   static const Color blue2 = Color(0xff5286EC);
   static const Color blue3 = Color(0xff658DD9);
-  static const Color lightBlue100 = Color(0xff3F80FF);
+  
   static const Color lightBlue200 = Color(0xff659AFF);
   static const Color lightBlue500 = Color(0xff8CB3FF);
   static const Color lightBlue700 = Color(0xffB2CCFF);
@@ -26,8 +26,10 @@ class AppColors {
   static const Color darkBlue200 = Color(0xff0056FE);
   static const Color darkBlue500 = Color(0xff0041BF);
   static const Color darkBlue700 = Color(0xff002B7F);
-  static const Color darkBlue900 = Color(0xff001640);
 
+  //text color
+  static const Color textPrimary = Color(0xff001640);
+ static const Color lightBlue100 = Color(0xff3F80FF);
 
   //red
   static const Color darkRed100 = Color(0xffFF3F50);
