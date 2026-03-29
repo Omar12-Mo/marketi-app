@@ -13,26 +13,26 @@ class Routes {
 class AppRoutes {
   static Route? generateRoute(RouteSettings routeSetting) {
     switch (routeSetting.name) {
-      case Routes.onBoarding_1:
-        MaterialPageRoute(
+      case Routes.intitlRoute:
+      return  MaterialPageRoute(
           builder: (_) {
             return OnBoarding1Screen();
           },
         );
       case Routes.onBoarding_2:
-        MaterialPageRoute(
+      return  MaterialPageRoute(
           builder: (_) {
             return OnBoarding2Screen();
           },
         );
       case Routes.onBoarding_3:
-        MaterialPageRoute(
+      return  MaterialPageRoute(
           builder: (_) {
             return OnBoarding3Screen();
           },
         );
       default:
-        MaterialPageRoute(
+       return MaterialPageRoute(
           builder: (_) {
             return Scaffold(body: Center(child: Text("not found")));
           },

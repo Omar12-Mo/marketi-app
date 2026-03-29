@@ -11,7 +11,9 @@ pluginManagement {
     includeBuild("$flutterSdkPath/packages/flutter_tools/gradle")
 
     repositories {
+        // Android Gradle plugin and Kotlin plugin markers are published to Google's Maven repository.
         google()
+        maven { url = uri("https://dl.google.com/dl/android/maven2") }
         mavenCentral()
         gradlePluginPortal()
     }
@@ -19,8 +21,17 @@ pluginManagement {
 
 plugins {
     id("dev.flutter.flutter-plugin-loader") version "1.0.0"
-    id("com.android.application") version "8.11.1" apply false
-    id("org.jetbrains.kotlin.android") version "2.2.20" apply false
+    id("com.android.application") version "8.7.0" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.10" apply false
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        maven { url = uri("https://dl.google.com/dl/android/maven2") }
+        mavenCentral()
+    }
 }
 
 include(":app")
