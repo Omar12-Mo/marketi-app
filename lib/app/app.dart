@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:marketi/core/routes/app_routes.dart';
 import 'package:marketi/core/theme/app_theme.dart';
 
 class MyApp extends StatelessWidget {
@@ -7,6 +8,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: Routes.intitlRoute,
+      onGenerateRoute: AppRoutes.generateRoute,
       title: 'Flutter Demo',
       theme: AppTheme.appLightTheme(),
       darkTheme: AppTheme.appDarkTheme(),
